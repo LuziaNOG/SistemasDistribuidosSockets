@@ -1,1 +1,13 @@
 Invocação remota a métodos utilizando o RMI.
+
+Execução:
+1- Compile os fontes com Javac,executando dentro do diretorio que possui os fontes (/src/rmi):
+  javac -d ../../bin/ *.java
+2- Rode o serviço de nomes,executando dentro do diretório que possui os .class (/bin) o comando:
+  rmiregistry
+3. Execute o servidor, execute dentro do diretorio que possui os .class (/bin) o comaando seguinte:
+  java -Djava.server.rmi.codebaseile:///rmi/ -Djava.security.policy=policy Servidor
+4. Rode o cliente, executando dentro do diretorio que possui os .class (/bin):
+  java -Djava.security.policy=policy Cliente
+
+obs:O arquivo policy é o arquivo que possui a definição da política de segurança,o qual pode ser substituido por outro.
