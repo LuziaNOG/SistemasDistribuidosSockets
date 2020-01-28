@@ -1,0 +1,8 @@
+Foram criadas 3 classes: UDPClient, UDPServer e CalcDistribuida.
+As operações são realizadas na classe CalcDistribuida, todos os métodos da
+calculadora estão lá. A classe UDPClient (Cliente) faz a requisição à classe
+UDPServer (Servidor), que por sua vez faz a chamada dos métodos de
+CalcDistribuída, que os executa e retorna a resposta ao servidor e o mesmo à envia ao
+cliente.
+A questão está organizada de modo que o usuário digite o primeiro número, depois a
+operação a ser realizada e por último o segundo número.
