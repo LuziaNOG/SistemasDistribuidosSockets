@@ -1,0 +1,12 @@
+Foram criadas 6 classes ClientTcp, Proxy, User (no lado cliente); e
+Despachante, ServidorTcp e Calculadora (no lado servidor).
+O User faz as interações com usuário, basicamente ele vai apenas instanciar o proxy e
+invocá-lo. No Proxy temos a classe ClienteTcp instanciada, e alguns métodos são
+inicializados, tais como o métodos de guardar as chaves e os dados em arquivo no
+cliente. A ClasseTcp basicamente vai realizar apenas a conexão e envio dos dados e
+recepção dos dados.
+Na classe ServerTcp, temos, assim com na classe cliente, apenas os métodos de
+conexão, e envio e recepção das mensagens. Para o lado do servidor a classe
+Despachante vai realizar todos o trabalho, todos os métodos de tratamento das
+mensagens estão lá. Por último a classe calculadora, como diz o nome, realiza as
+funções matemáticas e é sempre invocada pelo Descpachante.
