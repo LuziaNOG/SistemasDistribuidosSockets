@@ -1,0 +1,2 @@
+Para configurar um chat o tanto o cliente quanto o servidor recebem e enviam mensagens, desta forma foi
+estanciado um método para receber as mensagens, bem como enviar.
