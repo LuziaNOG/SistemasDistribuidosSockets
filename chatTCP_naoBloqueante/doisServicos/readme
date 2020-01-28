@@ -1,0 +1,14 @@
+Foram criadas 4 classes TCPClient, TCPServer, User e Service. A classe servicos
+traz o método para gerar numeros aleatórios, entre 0 e número digitado pelo usuário,
+além de um método que conta as letras de determinada palavra. As funções são
+invocadas de acordo com a identificação dos carácteres digitados.
+A classe Client interage com o usuário através da classe User, e também envia
+requisições de conexão, bem como o envio de dados ao servidor. O Server vai receber
+as informações enviadas por Client, trata-las e realizar a chamada dos métodos da
+classe Service que executam a função estabelecida.
+Para criar um servidor para cada serviço teríamos que divir a classe Service, tendo
+uma classe para cada serviço, contaletras e número randomico. E na tentativa de
+deixar a conexão o mais transparente possível, pode-se implementar um proxy para
+cada serviço, onde os proxys receberiam as requisições do cliente e as encaminhariam
+ao servidor, depois a resposta gerada pela classe Service faz o caminho inverso até o
+Client.
